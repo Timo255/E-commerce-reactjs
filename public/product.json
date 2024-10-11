@@ -1,0 +1,303 @@
+[
+   {
+    "id" : 1,
+    "category": "Chair",
+    "nameShop" : "White leather sofa",
+    "nameProduct" : "white leather sofa ",
+    "price" : 229,
+    "img" : "/images/Product 1seater white-sofa.png",
+    "imgProductCard" : "/images/1seater white-sofa.png",
+    "variationTitle" : "Seater",
+    "variation" : [
+        {
+           "idv" : 1,
+           "name" : "1seater white leather sofa",
+           "classname" : "variation Seater whiteLeatherSofa vari-1seater active-seater",
+           "text" : "1seater white leather sofa",
+           "text1" : "1seater",
+           "urlImg" : "/images/1seater white-sofa.png",
+           "priceV" : 299 
+        },
+        {
+           "idv" : 9,
+           "name" : "3seater white leather sofa",
+           "classname" : "variation Seater whiteLeatherSofa vari-3seater",
+           "text" : "3seater white leather sofa",
+           "text1" : "3seater",
+           "urlImg" : "/images/3seater white-sofa.png",
+           "priceV" : 399 
+        }
+    ],
+    "quantity" : 1
+   },
+   {
+    "id" : 2,
+    "category": "Chair",
+    "nameShop" : "Red wing chair",
+    "nameProduct" : "wing chair ",
+    "price" : 150,
+    "img" : "/images/product red wing chair.png",
+    "imgProductCard" : "/images/red wing chair.png",
+    "variationTitle" : "Color",
+    "variation" : [
+        {
+           "idv" : 2,
+           "name" : "red wing chair",
+           "classname" : "variation color wingChair color-red",
+           "colorData" : "red wing chair",
+           "colorData1" : "red",
+           "urlImg" : "/images/red wing chair.png" 
+        },
+        {
+          "idv" : 10,
+           "name" : "yellow wing chair",
+           "classname" : "variation color wingChair color-yellow",
+           "colorData" : "yellow wing chair",
+           "colorData1" : "yellow",
+           "urlImg" : "/images/yellow wing chair.png"
+        },
+        {
+           "idv" : 11,
+           "name" : "blue wing chair",
+           "classname" : "variation color wingChair color-blue",
+           "colorData" : "blue wing chair",
+           "colorData1" : "blue",
+           "urlImg" : "/images/blue wing chair.png"
+        }
+    ],
+    "quantity" : 1
+   },
+   {
+    "id" : 3,
+    "category": "Chair",
+    "nameShop" : "Brown sofa",
+    "nameProduct" : "brown sofa ",
+    "price" : 200,
+    "img" : "/images/product 2seater brown sofa.png",
+    "imgProductCard" : "/images/2seater brown sofa.png",
+    "variationTitle" : "Seater",
+    "variation" : [
+        {
+           "idv" : 3,
+           "name" : "2seater brown sofa",
+           "name1" : "2seater brown sofa",
+           "classname" : "variation Seater brownSofa vari-2seater active-seater",
+           "text" : "2seater brown sofa",
+           "text1" : "2seater",
+           "urlImg" : "/images/2seater brown sofa.png",
+           "priceV" : 200  
+        },
+        {
+           "idv" : 12,
+           "name" : "1seater brown sofa",
+           "name1" : "1seater brown sofa",
+           "classname" : "variation Seater brownSofa vari-1seater",
+           "text" : "1seater brown sofa",
+           "text1" : "1seater",
+           "urlImg" : "/images/1seater brown sofa.png",
+           "priceV" : 300   
+        }
+    ],
+    "quantity" : 1
+   },
+   {
+    "id" : 4,
+    "category": "Cushion",
+    "nameShop" : "Black cushion",
+    "nameProduct" : "cushion ",
+    "price" : 50,
+    "img" : "/images/product black cushion.png",
+    "imgProductCard" : "/images/black cushion.png",
+    "variationTitle" : "Color",
+    "variation" : [
+        {
+           "idv" : 4,
+           "name" : "black cushion",
+           "classname" : "variation color cushion color-black",
+           "colorData" : "black cushion",
+           "colorData1" : "black",
+           "urlImg" : "/images/black cushion.png"  
+        },
+        {
+           "idv" : 13,
+           "name" : "green cushion",
+           "classname" : "variation color cushion color-green",
+           "colorData" : "green cushion",
+           "colorData1" : "green",
+           "urlImg" : "/images/Green cushion.png" 
+        },
+        {
+           "idv" : 14,
+           "name" : "gray cushion",
+           "classname" : "variation color cushion color-gray",
+           "colorData" : "gray cushion",
+           "colorData1" : "gray",
+           "urlImg" : "/images/gray cushion.png" 
+        }
+    ],
+    "quantity" : 1
+   },
+   {
+    "id" : 5,
+    "category": "Chair",
+    "nameShop" : "Purple Sofa 3seater",
+    "nameProduct" : "Purple Sofa ",
+    "price" : 300,
+    "img" : "/images/product 3seater purple  sofa.png",
+    "imgProductCard" : "/src/assets/images/3seater purple sofa.png",
+    "variationTitle" : "Seater",
+    "variation" : [
+        {
+           "idv" : 5,
+           "name" : "purple Sofa (3seater)",
+           "classname" : "variation Seater purpleSofa vari-3seater active-seater",
+           "text" : "purple Sofa (3seater)",
+           "text1" : "3seater",
+           "urlImg" : "/images/3seater purple sofa.png",
+           "priceV" : 300 
+        },
+        {
+           "idv" : 15,
+           "name" : "purple Sofa (1seater)",
+           "classname" : "variation Seater purpleSofa vari-1seater",
+           "text" : "purple Sofa (1seater)",
+           "text1" : "1seater",
+           "urlImg" : "/images/1seater purple sofa.png" ,
+           "priceV" : 400 
+        }
+    ],
+    "quantity" : 1
+   },
+   {
+    "id" : 6,
+    "category": "Table",
+    "nameShop" : "Circle wooden table",
+    "nameProduct" : "wooden table ",
+    "price" : 150,
+    "img" : "/images/product Circle wooden table.png",
+    "imgProductCard" : "/images/Circle wooden table.png",
+    "variationTitle" : "Shapes",
+    "variation" : [
+        {
+           "idv" : 6,
+           "name" : "Circle wooden table",
+           "classname" : "variation Shape woodTable vari-Circle active-shape",
+           "text" : "Circle wooden table",
+           "text1" : "Circle",
+           "urlImg" : "/images/Circle wooden table.png",
+           "priceV" : 150 
+        },
+        {
+           "idv" : 16,
+           "name" : "rectangle wooden table",
+           "classname" : "variation Shape woodTable vari-rectangle",
+           "text" : "rectangle wooden table",
+           "text1" : "rectangle",
+           "urlImg" : "/images/rectangle wooden table.png",
+           "priceV" : 250  
+        },
+        {
+            "idv" : 17,
+            "name" : "Oval wooden table",
+            "classname" : "variation Shape woodTable vari-Oval",
+            "text" : "Oval wooden table",
+            "text1" : "Oval",
+            "urlImg" : "/images/Oval wooden table.png",
+            "priceV" : 350 
+        }
+    ],
+    "quantity" : 1
+   },
+   {
+    "id" : 7,
+    "category": "Table",
+    "nameShop" : "Oval Glass table",
+    "nameProduct" : "Glass table ",
+    "price" : 180,
+    "img" : "/images/product Oval Glass table.png",
+    "imgProductCard" : "/images/Oval Glass table.png",
+    "variationTitle" : "Shapes",
+    "variation" : [
+        {
+           "idv" : 7,
+           "name" : "Oval Glass table",
+           "classname" : "variation Shape glassTable vari-Oval active-shape",
+           "text" : "Oval Glass table",
+           "text1" : "Oval",
+           "urlImg" : "/images/Oval Glass table.png",
+           "priceV" : 180  
+        },
+        {
+           "idv" : 18,
+           "name" : "Square Glass table",
+           "classname" : "variation Shape glassTable vari-Square",
+           "text" : "Square Glass table",
+           "text1" : "Square",
+           "urlImg" : "/images/Square Glass table.png",
+           "priceV" : 280  
+        }
+    ],
+    "quantity" : 1
+   },
+   {
+    "id" : 8,
+    "category": "Bed",
+    "nameShop" : "Bed",
+    "nameProduct" : "bed ",
+    "price" : 180,
+    "img" : "/images/product bed.png",
+    "imgProductCard" : "/images/(30X40) bed.png",
+    "variationTitle" : "Dimensions",
+    "variation" : [
+        {
+           "idv" : 8,
+           "name" : "(30X40) bed",
+           "classname" : "variation Dimensions Bed dim-30X40 active-bed",
+           "text" : "(30X40) bed",
+           "text1" : "30X40",
+           "urlImg" : "/images/(30X40) bed.png",
+           "priceV" : 180 
+        },
+        {
+           "idv" : 19,
+           "name" : "(50X40) bed",
+           "classname" : "variation Dimensions Bed dim-50X40",
+           "text" : "(50X40) bed",
+           "text1" : "50X40",
+           "urlImg" : "/images/(50X40) bed.png",
+           "priceV" : 280 
+        }
+    ],
+    "quantity" : 1
+   },
+   {
+      "id" : 9,
+      "category": "Cushion",
+      "name" : "black futon",
+      "price" : 500,
+      "img" : "/images/product black futon.png",
+      "imgDesktop437w" : "/images/desktop black futon.png",
+      "imgMobile360w" : "/images/mobile black futon.png",
+      "imgProductCard" : "/images/black futon.png",
+      "variationTitle" : "Color",
+      "variation" : [
+        {
+          "idv" : 9,
+          "name" : "black futon",
+          "classname" : "variation color cushion color-black",
+          "colorData" : "black futon",
+          "colorData1" : "black",
+          "urlImg" : "/images/black futon.png"  
+       },
+       {
+          "idv" : 20,
+          "name" : "red futon",
+          "classname" : "variation color cushion color-red",
+          "colorData" : "red futon",
+          "colorData1" : "red",
+          "urlImg" : "/images/red futon.png" 
+       }
+      ],
+      "quantity" : 1
+   }
+]
