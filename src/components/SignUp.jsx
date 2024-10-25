@@ -54,7 +54,7 @@ const SignUp = () => {
   return (
     <div className='wrapper-login'>
     <div className="form-container">
-     <Link to="/" className="logo">
+     <Link to="/" onClick={() => window.scroll(0,0)} className="logo">
             LOGO
      </Link>
      <h2 className='h2Login'>SignUp</h2>

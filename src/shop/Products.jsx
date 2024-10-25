@@ -8,7 +8,7 @@ const Products = ({items}) => {
        items.map((item) => (
         <div className={`product-img-details ${item.category}`} key={item.id}>
            <div className="img-product">
-             <Link to={`/shop/${item.id}`}>
+             <Link to={`/shop/${item.id}`} onClick={() => window.scroll(0,0)}>
                <img src={item.img} alt="" />
              </Link> 
            </div>

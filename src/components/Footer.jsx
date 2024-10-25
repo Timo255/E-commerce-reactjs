@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="wrapper-div">
         <div className="footer-details-div">
           <div className="footer-logo-details">
-            <Link to={"/"}>
+            <Link to={"/"} onClick={() => window.scroll(0,0)}>
               <div className="footer-logo">Logo</div>
             </Link>
             <p className="address">Lorem ipsum dolor sit amet consectetur.</p>

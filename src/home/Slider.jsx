@@ -119,7 +119,7 @@ const Slider = () => {
                   <p className="advert-details">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Qui amet quasi numquam voluptatibus ratione,<br/>illo aliquid, nulla voluptas veniam eius et?
                   </p>
-                  <Link to={`/shop/${slide.id}`}><button id="buyNow">Buy Now</button></Link> 
+                  <Link to={`/shop/${slide.id}`} onClick={() => window.scroll(0,0)}><button id="buyNow">Buy Now</button></Link> 
                 </div>
                 <div className="advert-img">
                   <img src={slide.imgLg439} alt="" 

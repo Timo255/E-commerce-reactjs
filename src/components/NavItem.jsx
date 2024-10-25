@@ -16,6 +16,12 @@ const NavItem = () => {
 
   const from = location.state?.from?.pathname || '/';
 
+  const handleScroll = (activeName) => {
+    window.scroll(0,0)
+    setMenuOpen(false)
+    setMenuActive(activeName)
+ }
+
   const handleLogout = async () => {
     await LogOut().then(() => {
       alert("Sign-out successfull")
@@ -34,18 +40,18 @@ const NavItem = () => {
   return (
     <div className='wrapper-nav-div'>
         <div id="logo-nav-div">
-          <Link to="/" style={{textDecoration: 'none'}} className="logo">
+          <Link to="/" onClick={() => window.scroll(0,0)} style={{textDecoration: 'none'}} className="logo">
               LOGO
           </Link>
           <div id="nav-icons">
             <nav>
              <div id="navLinks" className={menuOpen ? "activeNavLink" : ""}>
               <Link to="/"
-              onClick={() => setMenuOpen(false) & setMenuActive("home")} 
+              onClick={() => handleScroll("home")} 
               className={`nav-item ${menuActive === "home" ? "active" : ""} navLink`}
               >Home</Link>
               <Link to="/shop"
-              onClick={() => setMenuOpen(false) & setMenuActive("shop")}
+              onClick={() => handleScroll("shop")}
               className={`nav-item ${menuActive === "shop" ? "active" : ""} navLink`}
               >Shop</Link>
              </div>
@@ -57,8 +63,8 @@ const NavItem = () => {
               </>
               ) : (
                 <>
-                <Link to="/sign-up" className="nav-item">SignUp</Link>
-                <Link to="/login" className="nav-item">Login</Link>
+                <Link to="/sign-up" onClick={() => window.scroll(0,0)} className="nav-item">SignUp</Link>
+                <Link to="/login" onClick={() => window.scroll(0,0)} className="nav-item">Login</Link>
                 </>
               )
              }

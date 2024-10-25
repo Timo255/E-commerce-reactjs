@@ -32,7 +32,7 @@ const Login = () => {
   return (
     <div className='wrapper-login'>
       <div className="form-container">
-       <Link to="/" className="logo">
+       <Link to="/" onClick={() => window.scroll(0,0)} className="logo">
               LOGO
        </Link>
        <h2 className='h2Login'>Login</h2>
@@ -49,7 +49,7 @@ const Login = () => {
                  <input type="checkbox" name='remember' id='remember' />
                  <label htmlFor="remember">Remember Me</label>
               </div> */}
-              <Link to="/forgetpass" className='pwdForget'>Forget Password</Link>   
+              {/* <Link to="/forgetpass" className='pwdForget'>Forget Password</Link>    */}
             </div>
         </div>
         {

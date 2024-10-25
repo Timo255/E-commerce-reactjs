@@ -40,7 +40,7 @@ const Offer = () => {
     <>
       {
       offer.map((off) => (
-        <Link key={off.id} to={`/shop/${off.id}`} className="offerLink">
+        <Link key={off.id} to={`/shop/${off.id}`} onClick={() => window.scroll(0,0)} className="offerLink">
            <div id="offer">
              <div className="offer-details">
                <p className="discount">DISCOUNTED</p>

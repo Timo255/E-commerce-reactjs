@@ -104,7 +104,7 @@ const NewProducts = () => {
              newProducts.map((newProduct) => (
                <div className="product-img-details" key={newProduct.id}>
                  <div className="img-product">
-                    <Link to={`/shop/${newProduct.id}`}>
+                    <Link to={`/shop/${newProduct.id}`} onClick={() => window.scroll(0,0)}>
                      <img src={newProduct.img} alt="" />
                     </Link>
                  </div>  
