@@ -70,9 +70,6 @@ const Login = () => {
           <span className='txtSignUp'>
               Don't Have an Account <Link to="/sign-up" className='txtColor'>Sign Up</Link>
          </span>
-         <p className='or'>or</p>
-         <p className='or'>sign in with Google</p>
-         <GoogleSignUp /> 
        </div>
       </div>      
     </div>
