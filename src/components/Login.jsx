@@ -1,11 +1,13 @@
 import React, { useContext, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../Context/Authentication';
-import GoogleSignUp from './GoogleSignUp';
+import { doc, setDoc } from 'firebase/firestore';
+import { db } from '../firebase/firebase';
+import GoogleLogin from './GoogleLogin';
 
 const Login = () => {
   const [errorMessage, setErrorMessage] = useState("");
-  const {Login} = useContext(AuthContext)
+  const {Login,SignUpWithGoogle} = useContext(AuthContext)
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -28,6 +30,25 @@ const Login = () => {
   })
 
   }
+
+  const googleLogin = async () => {
+    await SignUpWithGoogle().then(async(result) =>{
+      const user = result.user;
+      if(result.user){
+        await setDoc(doc(db,"Users", user.uid),{
+          email:user.email,
+          firstName: user.displayName,
+          photo: user.photoURL,
+          lastname : ""
+      });
+      }
+      alert("User logged in Successfully")
+      navigate(from, {replace: true})
+    }).catch((error) => {
+      const errorMsg = error.message;
+      setErrorMessage(errorMsg)
+    })
+}
 
   return (
     <div className='wrapper-login'>
@@ -72,7 +93,7 @@ const Login = () => {
          </span>
          <p className='or'>or</p>
          <p className='or'>sign in with Google</p>
-         <GoogleSignUp /> 
+         <GoogleLogin googleLogin={googleLogin} />
        </div>
       </div>      
     </div>

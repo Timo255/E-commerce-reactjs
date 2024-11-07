@@ -57,20 +57,20 @@ const NavItem = () => {
              </div>
              {
               user ? (
-              <>
-              <p>Welcome {user.firstName}</p>
+              <div className='nameLogout'>
+              <p className='logoutCart'>Welcome {user.firstName}</p>
               <p onClick={handleLogout}>Logout</p>
-              </>
+              </div>
               ) : (
                 <>
-                <Link to="/sign-up" onClick={() => window.scroll(0,0)} className="nav-item">SignUp</Link>
-                <Link to="/login" onClick={() => window.scroll(0,0)} className="nav-item">Login</Link>
+                <Link to="/sign-up" onClick={() => window.scroll(0,0)} className="nav-item signUp">SignUp</Link>
+                <Link to="/login" onClick={() => window.scroll(0,0)} className="nav-item login">Login</Link>
                 </>
               )
              }
-             <div className="nav-icon" id="cartBtn">
+             <div className="nav-icon" id={`${user ? "cartBtn" : "cartBtnLogout"}`}>
                 <Link to="/cart"><img src={cartIcon} alt="" /></Link>
-                <span id="num">{cartItems ? cartNumber : 0}</span>
+                <span id={`${user ? "num" : "numLogout"}`}>{cartItems ? cartNumber : 0}</span>
               </div>
               <div id="menuBtn" onClick={(e) => setMenuOpen(!menuOpen)}>
                 <img src={menuOpen ? CloseIcon : MenuIcon} alt="" />

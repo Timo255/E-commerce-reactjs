@@ -1,9 +1,8 @@
 import React, { useContext, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import GgIcon from '/images/Google.jpg'
 import { AuthContext } from '../Context/Authentication';
 import { doc, setDoc } from 'firebase/firestore';
-import { auth, db } from '../firebase/firebase';
+import { db } from '../firebase/firebase';
 import GoogleSignUp from './GoogleSignUp';
 
 const SignUp = () => {
@@ -48,6 +47,25 @@ const SignUp = () => {
     })
     }
   }
+
+  const googleSignUp = async () => {
+    await SignUpWithGoogle().then(async(result) =>{
+      const user = result.user;
+      if(result.user){
+        await setDoc(doc(db,"Users", user.uid),{
+          email:user.email,
+          firstName: user.displayName,
+          photo: user.photoURL,
+          lastname : ""
+      });
+      }
+      alert("User logged in Successfully")
+      navigate(from, {replace: true})
+    }).catch((error) => {
+      const errorMsg = error.message;
+      setErrorMessage(errorMsg)
+    })
+}
 
 
 
@@ -97,7 +115,7 @@ const SignUp = () => {
       </span>
        <p className='or'>or</p>
        <p className='or'>sign in with Google</p>
-       <GoogleSignUp />
+       <GoogleSignUp googleSignUp={googleSignUp} />
      </div>
     </div>      
   </div>
