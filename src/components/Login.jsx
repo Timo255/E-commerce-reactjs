@@ -91,9 +91,12 @@ const Login = () => {
           <span className='txtSignUp'>
               Don't Have an Account <Link to="/sign-up" className='txtColor'>Sign Up</Link>
          </span>
+<<<<<<< HEAD
          <p className='or'>or</p>
          <p className='or'>sign in with Google</p>
          <GoogleLogin googleLogin={googleLogin} />
+=======
+>>>>>>> 8c8fcda82424f629ad47a645ead972da5f0f7e0c
        </div>
       </div>      
     </div>
