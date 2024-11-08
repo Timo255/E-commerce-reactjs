@@ -129,6 +129,11 @@ nav .navLink{
     position: relative;
     top: 10px;
 }
+#cartBtnLogout{
+    position: relative;
+    top: 13px;
+    right: 10px;
+}
 .cartIcon{
     width: 25px;
     height: 25px;
@@ -141,6 +146,17 @@ nav .navLink{
     font-weight: 900;
     position: relative;
     bottom: 40px;
+    left: 25px;
+    background-color: var(--logoColor);
+    color: var(--colortext);
+    border: none;
+    border-radius: 40%;
+}
+#numLogout{
+    font-size: 18px;
+    font-weight: 900;
+    position: relative;
+    bottom: 45px;
     left: 25px;
     background-color: var(--logoColor);
     color: var(--colortext);
